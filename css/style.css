@@ -1,0 +1,409 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+main {
+    min-height: 70vh;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.30);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #38bdf8;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #38bdf8;
+    font-size: 1.8rem;
+}
+
+h3, h4 {
+    color: #38bdf8;
+}
+
+p {
+    color: #e2e8f0;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo h1 {
+    color: #38bdf8;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-bottom: 0;
+}
+
+.burger {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    color: #ffffff;
+    background: none;
+    border: none;
+}
+
+nav {
+    background: #020617;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 20px;
+}
+
+.menu li a {
+    color: #e2e8f0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #38bdf8;
+}
+
+/* =========================
+   FORMS
+========================= */
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #e2e8f0;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #38bdf8;
+}
+
+button {
+    display: inline-block;
+    background: #38bdf8;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+/* =========================
+   HOME / REGISTER
+========================= */
+.page-intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page-intro p {
+    color: #cbd5e1;
+}
+
+.info-box {
+    margin-top: 20px;
+    background: #0f172a;
+    border-left: 4px solid #38bdf8;
+    padding: 15px;
+    border-radius: 6px;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* =========================
+   QUIZ
+========================= */
+.quiz-container {
+    max-width: 850px;
+    margin: 60px auto;
+    background: #ffffff;
+    color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-container h1,
+.quiz-container h2 {
+    text-align: center;
+    color: #0f172a;
+}
+
+.question {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.question p {
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.question label {
+    display: block;
+    margin: 8px 0;
+    color: #334155;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.question input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* =========================
+   VALIDATION / RESULT
+========================= */
+.result-container {
+    max-width: 700px;
+    margin: 60px auto;
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.result-container h1 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 26px;
+    margin: 20px 0;
+    color: #22c55e;
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #020617;
+    padding: 40px 20px 20px;
+    border-top: 1px solid #1e293b;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer-box h3,
+.footer-box h4 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.footer-box p {
+    color: #e2e8f0;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 15px;
+    font-size: 24px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #e2e8f0;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #38bdf8;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #1e293b;
+    padding-top: 20px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* =========================
+   MESSAGES
+========================= */
+.success-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #22c55e;
+    text-align: center;
+}
+
+.error-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ef4444;
+    text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        padding: 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        width: 100%;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 15px 20px;
+    }
+
+    .header-container {
+        flex-direction: row;
+    }
+
+    .container,
+    .quiz-container,
+    .result-container {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    .logo p {
+        font-size: 13px;
+    }
+}
