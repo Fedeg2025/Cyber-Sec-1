@@ -10,3 +10,5 @@ require __DIR__ . "/Config/config.php";
 
 // Chargement et appel du routeur
 require RACINE . "/Config/route.php";
+$route = new Route();
+$route->router();
