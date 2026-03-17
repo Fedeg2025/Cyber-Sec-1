@@ -34,7 +34,7 @@ class Candidats {
     }
 
     // Créer un candidat
-    public function create($firstname,$lastname,$post_type,$cv_path) {
+    public function create($firstname,$lastname,$post_type,$cv_path=null) {
         $query = "INSERT INTO " . $this->table . "
                 (firstname, lastname, post_type, cv_path)
                 VALUES
@@ -79,7 +79,5 @@ class Candidats {
         return $stmt->execute();
     }
 }
-
-$candidat = new Candidats();
 
 ?>
